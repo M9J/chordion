@@ -42,5 +42,6 @@ export const KEYS = (() => {
 })();
 
 export function findKeyIndexFromKeys(key: Key) {
-  return KEYS_ARR.findIndex((k) => k.note === key.note && k.octave === key.octave);
+  const indexFn = (k: Key) => k.note === key.note && k.octave === key.octave;
+  return KEYS_ARR.findIndex(indexFn);
 }
