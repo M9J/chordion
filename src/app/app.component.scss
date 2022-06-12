@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
 :host {
   width: 100%;
   height: 100%;
@@ -6,22 +8,33 @@
   left: 0;
 }
 
-:host::before {
-  content: 'Chordion';
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 10vw;
-  opacity: 0.025;
-  user-select: none;
-  pointer-events: none;
-  z-index: -99999;
+.chordion-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .chordion-logo {
   padding: 8px;
-  background-color: silver;
+  font-size: 24px;
+  text-align: center;
+  color: white;
+  background-color: black;
+  font-family: "Great Vibes", sans-serif;
+}
+
+.chordion-header {
+  padding: 8px;
   font-weight: bold;
+  color: grey;
+  background: #ddd;
+  border-top: 1px solid silver;
+  border-bottom: 1px solid silver;
+}
+
+.chordion-controls {
+  overflow-y: auto;
+  position: relative;
+  flex: 1;
+  flex-basis: 0;
 }

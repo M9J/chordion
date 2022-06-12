@@ -26,7 +26,7 @@ const KEYS_61 = [
 ];
 const KEYS_88 = [
   new Key('A', 0, Color.WHITE),
-  new Key('A#', 0, Color.WHITE),
+  new Key('A#', 0, Color.BLACK),
   new Key('B', 0, Color.WHITE),
   ...OCTAVE(1),
   ...OCTAVE(2),
