@@ -28,9 +28,10 @@
   padding: 8px;
   font-weight: bold;
   color: grey;
-  background: #ddd;
-  border-top: 1px solid silver;
-  border-bottom: 1px solid silver;
+  background: #000;
+  border-top: 1px solid 333;
+  border-bottom: 1px solid 333;
+  user-select: none;
 }
 
 .chordion-controls {
@@ -38,4 +39,14 @@
   position: relative;
   flex: 1;
   flex-basis: 0;
+
+  &::-webkit-scrollbar {
+    background-color: #222;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #333;
+    &:hover {
+      background-color: #444;
+    }
+  }
 }

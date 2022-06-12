@@ -11,11 +11,11 @@
 fieldset {
   display: flex;
   padding: 8px 12px 12px;
-  border: 1px solid silver;
-  // box-shadow: 1px 2px 4px rgba(0,0,0,0.25);
+  border: 1px solid #333;
 
   legend {
     font-size: 12px;
+    color: grey;
   }
 }
 
@@ -25,6 +25,9 @@ button {
   border-radius: 0px;
   border: 1px solid silver;
   opacity: 0.5;
+  background-color: transparent;
+  color: silver;
+  user-select: none;
 }
 
 input {
@@ -32,6 +35,8 @@ input {
   text-align: center;
   border-radius: 0px;
   border: 1px solid silver;
+  background-color: transparent;
+  color: silver;
 }
 
 button:nth-child(2),

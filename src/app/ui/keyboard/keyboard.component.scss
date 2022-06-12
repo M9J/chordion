@@ -14,5 +14,15 @@
   padding-right: 24px;
   box-sizing: border-box;
   background-color: black;
-  // justify-content: center;
+
+  &::-webkit-scrollbar {
+    background-color: #222;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #333;
+
+    &:hover {
+      background-color: #444;
+    }
+  }
 }
