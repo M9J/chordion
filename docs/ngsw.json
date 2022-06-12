@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1655051639043,
+  "timestamp": 1655051863376,
   "index": "https://m9j.github.io/chordion/index.html",
   "assetGroups": [
     {
@@ -28,28 +28,28 @@
         "ignoreVary": true
       },
       "urls": [
-        "https://m9j.github.io/chordion/assets/icons/128x128.png",
-        "https://m9j.github.io/chordion/assets/icons/144x144.png",
-        "https://m9j.github.io/chordion/assets/icons/152x152.png",
-        "https://m9j.github.io/chordion/assets/icons/192x192.png",
-        "https://m9j.github.io/chordion/assets/icons/384x384.png",
-        "https://m9j.github.io/chordion/assets/icons/512x512.png",
-        "https://m9j.github.io/chordion/assets/icons/72x72.png",
-        "https://m9j.github.io/chordion/assets/icons/96x96.png"
+        "https://m9j.github.io/chordion/assets/icons/icon-128x128.png",
+        "https://m9j.github.io/chordion/assets/icons/icon-144x144.png",
+        "https://m9j.github.io/chordion/assets/icons/icon-152x152.png",
+        "https://m9j.github.io/chordion/assets/icons/icon-192x192.png",
+        "https://m9j.github.io/chordion/assets/icons/icon-384x384.png",
+        "https://m9j.github.io/chordion/assets/icons/icon-512x512.png",
+        "https://m9j.github.io/chordion/assets/icons/icon-72x72.png",
+        "https://m9j.github.io/chordion/assets/icons/icon-96x96.png"
       ],
       "patterns": []
     }
   ],
   "dataGroups": [],
   "hashTable": {
-    "https://m9j.github.io/chordion/assets/icons/128x128.png": "460abb835a94224dc5c8157b3ed742ff571013fd",
-    "https://m9j.github.io/chordion/assets/icons/144x144.png": "87b4260a3faca2675a5afa240d68d7aeb00c21ee",
-    "https://m9j.github.io/chordion/assets/icons/152x152.png": "98081620c3ec9e6a520d161580e6d92e7f47a311",
-    "https://m9j.github.io/chordion/assets/icons/192x192.png": "7f779dd2923bb18f98163ae904ed9e1dc7d2574e",
-    "https://m9j.github.io/chordion/assets/icons/384x384.png": "ead640c595630091be063b4dcff9dd9954f3d87f",
-    "https://m9j.github.io/chordion/assets/icons/512x512.png": "bce8b18f03d60044963e7fb35402a9f46a3d347b",
-    "https://m9j.github.io/chordion/assets/icons/72x72.png": "4fbb450f0893917d4f0212c4b5f562f9bdff8eb1",
-    "https://m9j.github.io/chordion/assets/icons/96x96.png": "8dbcebae51778a4030034c1ac3053c44a8220493",
+    "https://m9j.github.io/chordion/assets/icons/icon-128x128.png": "460abb835a94224dc5c8157b3ed742ff571013fd",
+    "https://m9j.github.io/chordion/assets/icons/icon-144x144.png": "87b4260a3faca2675a5afa240d68d7aeb00c21ee",
+    "https://m9j.github.io/chordion/assets/icons/icon-152x152.png": "98081620c3ec9e6a520d161580e6d92e7f47a311",
+    "https://m9j.github.io/chordion/assets/icons/icon-192x192.png": "7f779dd2923bb18f98163ae904ed9e1dc7d2574e",
+    "https://m9j.github.io/chordion/assets/icons/icon-384x384.png": "ead640c595630091be063b4dcff9dd9954f3d87f",
+    "https://m9j.github.io/chordion/assets/icons/icon-512x512.png": "bce8b18f03d60044963e7fb35402a9f46a3d347b",
+    "https://m9j.github.io/chordion/assets/icons/icon-72x72.png": "4fbb450f0893917d4f0212c4b5f562f9bdff8eb1",
+    "https://m9j.github.io/chordion/assets/icons/icon-96x96.png": "8dbcebae51778a4030034c1ac3053c44a8220493",
     "https://m9j.github.io/chordion/index.html": "465da71e344a7534e65b3b9978cb99960882d052",
     "https://m9j.github.io/chordion/main.15ba91839d06cf72.js": "5a8dfb8fca5b8b7dfbbdfd7f096b44996b3c865d",
     "https://m9j.github.io/chordion/manifest.webmanifest": "f43678f9c9a4184c2686ce424d5014c26034d3ac",
