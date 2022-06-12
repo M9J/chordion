@@ -17,9 +17,13 @@
   border: 2px solid black;
   border-top: 0;
   user-select: none;
+  cursor: pointer;
 }
 
 .key-black:hover {
-  cursor: pointer;
   background-color: grey;
+}
+
+.key-black:active {
+  background-color: silver;
 }
