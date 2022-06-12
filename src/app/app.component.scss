@@ -15,12 +15,13 @@
 }
 
 .chordion-logo {
-  padding: 8px;
+  padding: 8px 8px 0 8px;
   font-size: 24px;
   text-align: center;
   color: white;
   background-color: black;
   font-family: "Great Vibes", sans-serif;
+  user-select: none;
 }
 
 .chordion-header {

@@ -1,8 +1,8 @@
 {
-  "name": "Chordion",
-  "short_name": "Chordion",
-  "theme_color": "#000",
-  "background_color": "#000",
+  "name": "chordion",
+  "short_name": "chordion",
+  "theme_color": "#1976d2",
+  "background_color": "#fafafa",
   "display": "standalone",
   "scope": "./",
   "start_url": "./",
