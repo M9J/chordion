@@ -10,8 +10,10 @@ import { Transpose } from './chordion/core/transpose';
 })
 export class AppComponent {
   constructor() {
+    console.log('KEYS', KEYS);
     const cMajor = new Chord([KEYS[3]['C'], KEYS[3]['F'], KEYS[3]['G']]);
+    console.log('cMajor.keys', cMajor.keys);
     const transposedChord = new Transpose().transposeChord(cMajor, 2);
-    console.log(transposedChord);
+    console.log('transposedChord', transposedChord);
   }
 }

@@ -1,0 +1,12 @@
+:host {
+  display: inline-block;
+  position: relative;
+}
+
+.keyboard-container {
+  position: relative;
+  display: flex;
+  width: 100vw;
+  overflow-x: auto;
+  border-top: 4px solid silver;
+}
