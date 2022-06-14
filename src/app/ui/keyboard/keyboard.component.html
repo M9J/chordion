@@ -1,14 +1,8 @@
 <div class="keyboard-container">
   <ng-container *ngIf="keyboard">
     <ng-container *ngFor="let key of keysArray">
-      <ui-key-black
-        *ngIf="key['color'] === 0"
-        [isActive]="key.isActive"
-      ></ui-key-black>
-      <ui-key-white
-        *ngIf="key['color'] === 1"
-        [isActive]="key.isActive"
-      ></ui-key-white>
+      <ui-key-black *ngIf="key['color'] === 0" [key]="key"></ui-key-black>
+      <ui-key-white *ngIf="key['color'] === 1" [key]="key"></ui-key-white>
     </ng-container>
   </ng-container>
 </div>

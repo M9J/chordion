@@ -4,7 +4,7 @@
 }
 
 .key-white {
-  display: inline-block;
+  display: inline-flex;
   width: 36px;
   height: 104px;
   background-color: white;
@@ -20,15 +20,25 @@
   user-select: none;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
+  align-items: flex-end;
+  justify-content: center;
+  font-size: 12px;
 }
 
 .key-white:hover {
-  background-color: silver;
+  background-color: grey;
   -webkit-tap-highlight-color: transparent;
 }
 
 .key-white:active,
 .is-active {
-  background-color: grey;
+  background-color: orange;
   -webkit-tap-highlight-color: transparent;
+}
+
+.key-label {
+  text-align: center;
+  letter-spacing: 2px;
+  color: black;
+  padding-bottom: 8px;
 }

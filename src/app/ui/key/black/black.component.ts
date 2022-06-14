@@ -6,7 +6,9 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./black.component.scss'],
 })
 export class BlackComponent implements OnInit {
-  @Input() isActive = false;
+  @Input() key: any = {
+    isActive: false,
+  };
 
   constructor() {}
 

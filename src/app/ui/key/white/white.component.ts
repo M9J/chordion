@@ -6,7 +6,9 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./white.component.scss'],
 })
 export class WhiteComponent implements OnInit {
-  @Input() isActive = false;
+  @Input() key: any = {
+    isActive: false,
+  };
 
   constructor() {}
 
