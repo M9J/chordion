@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OctaveComponent implements OnInit {
 
+  octaves = [];
+  
   constructor() { }
 
   ngOnInit(): void {

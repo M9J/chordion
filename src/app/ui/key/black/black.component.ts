@@ -1,15 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'ui-key-black',
   templateUrl: './black.component.html',
-  styleUrls: ['./black.component.scss']
+  styleUrls: ['./black.component.scss'],
 })
 export class BlackComponent implements OnInit {
+  @Input() isActive = false;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

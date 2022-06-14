@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { Chord } from './chordion/core/chord';
-import { KEYS } from './chordion/core/index';
+import { Keyboard } from './chordion/core/keyboard';
 import { Transpose } from './chordion/core/transpose';
+import { ChordionService } from './chordion/services/chordion.service';
 
 @Component({
   selector: 'app-root',
@@ -9,11 +10,21 @@ import { Transpose } from './chordion/core/transpose';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  constructor() {
-    console.log('KEYS', KEYS);
-    const cMajor = new Chord([KEYS[3]['C'], KEYS[3]['F'], KEYS[3]['G']]);
-    console.log('cMajor.keys', cMajor.keys);
-    const transposedChord = new Transpose().transposeChord(cMajor, 2);
-    console.log('transposedChord', transposedChord);
+  constructor(private chordionService: ChordionService) {
+    this.poc2();
+  }
+
+  poc2() {
+    const keyboard = new Keyboard(88).keyboard;
+    this.chordionService.currentKeyboard = keyboard;
+    if (keyboard) {
+      const cMajor = new Chord([
+        keyboard['3C'],
+        keyboard['3F'],
+        keyboard['3G'],
+      ]);
+      const transposedChord = new Transpose().chord(cMajor, 2, keyboard);
+      console.log('transposedChord', transposedChord);
+    }
   }
 }

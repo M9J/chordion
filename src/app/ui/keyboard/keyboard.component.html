@@ -1,13 +1,14 @@
 <div class="keyboard-container">
-  <ui-key-white></ui-key-white>
-  <ui-key-black></ui-key-black>
-  <ui-key-white></ui-key-white>
-  <ui-octave></ui-octave>
-  <ui-octave></ui-octave>
-  <ui-octave></ui-octave>
-  <ui-octave></ui-octave>
-  <ui-octave></ui-octave>
-  <ui-octave></ui-octave>
-  <ui-octave></ui-octave>
-  <ui-key-white></ui-key-white>
+  <ng-container *ngIf="keyboard">
+    <ng-container *ngFor="let key of keysArray">
+      <ui-key-black
+        *ngIf="key['color'] === 0"
+        [isActive]="key.isActive"
+      ></ui-key-black>
+      <ui-key-white
+        *ngIf="key['color'] === 1"
+        [isActive]="key.isActive"
+      ></ui-key-white>
+    </ng-container>
+  </ng-container>
 </div>

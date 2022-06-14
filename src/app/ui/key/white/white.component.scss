@@ -22,9 +22,10 @@
 }
 
 .key-white:hover {
-  background-color: grey;
+  background-color: silver;
 }
 
-.key-white:active {
-  background-color: silver;
+.key-white:active,
+.is-active {
+  background-color: grey;
 }

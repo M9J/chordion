@@ -4,29 +4,60 @@ import { Key } from './key';
 import { TRANSPOSE_ERRORS } from '../errors/transpose-errors';
 
 export class Transpose {
-  transposeChord(chord: Chord, value: number): Key[] {
-    const transposedChords: Key[] = [];
+  constructor() {}
+
+  chord(chord: Chord, value: number, keyboard: any) {
+    const transposedKeys: any = [];
     if (chord.keys) {
       for (let key of chord.keys) {
-        const transposedKey = this.transposeKey(key, value);
+        const transposedKey = this.key(key, value, keyboard);
         if (transposedKey) {
-          transposedChords.push(transposedKey);
+          transposedKeys.push(transposedKey);
         }
       }
     }
-    return transposedChords;
+    return new Chord(transposedKeys);
   }
 
-  transposeKey(key: Key, value: number): Key {
-    let transposedKey: Key = key;
-    if (key && value) {
-      const keyIndex = findKeyIndexFromKeys(key);
+  key(key: Key, value: number, keyboard: any) {
+    let transposedKey = key;
+    if (key && value && keyboard) {
+      const keysArray = Object.keys(keyboard);
+      const keyLabel = `${key.octave}${key.note}`;
+      const keyIndex = keysArray.findIndex((k) => k === keyLabel);
       const transposedKeyIndex = keyIndex + value;
-      transposedKey = KEYS_ARR[transposedKeyIndex];
+      const transposedKeyLabel = keysArray[transposedKeyIndex];
+      transposedKey = keyboard[transposedKeyLabel];
       if (!transposedKey) {
         throw new Error(TRANSPOSE_ERRORS.KEY_OUT_OF_RANGE);
       }
     }
     return transposedKey;
   }
+
+  // transposeChordv1(chord: Chord, value: number): Key[] {
+  //   const transposedChords: Key[] = [];
+  //   if (chord.keys) {
+  //     for (let key of chord.keys) {
+  //       const transposedKey = this.transposeKey(key, value);
+  //       if (transposedKey) {
+  //         transposedChords.push(transposedKey);
+  //       }
+  //     }
+  //   }
+  //   return transposedChords;
+  // }
+
+  // transposeKeyv1(key: Key, value: number): Key {
+  //   let transposedKey: Key = key;
+  //   if (key && value) {
+  //     const keyIndex = findKeyIndexFromKeys(key);
+  //     const transposedKeyIndex = keyIndex + value;
+  //     transposedKey = KEYS_ARR[transposedKeyIndex];
+  //     if (!transposedKey) {
+  //       throw new Error(TRANSPOSE_ERRORS.KEY_OUT_OF_RANGE);
+  //     }
+  //   }
+  //   return transposedKey;
+  // }
 }
