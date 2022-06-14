@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ChordionService } from 'src/app/chordion/services/chordion.service';
 
 @Component({
   selector: 'ui-transpose',
@@ -8,15 +9,15 @@ import { Component, OnInit } from '@angular/core';
 export class TransposeComponent implements OnInit {
   transposeValue: number = 0;
 
-  constructor() {}
+  constructor(private chordionService: ChordionService) {}
 
   ngOnInit(): void {}
 
   decrement() {
-    --this.transposeValue;
+    this.chordionService.transpose(--this.transposeValue);
   }
 
   increment() {
-    ++this.transposeValue;
+    this.chordionService.transpose(++this.transposeValue);
   }
 }

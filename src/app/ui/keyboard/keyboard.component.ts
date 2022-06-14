@@ -15,10 +15,5 @@ export class KeyboardComponent implements OnInit {
   ngOnInit(): void {
     this.keyboard = this.chordionService.currentKeyboard;
     if (this.keyboard) this.keysArray = Object.values(this.keyboard);
-
-    // this.chordionService.activateNotes(['1C', '1E', '1G']);
-    // this.chordionService.activateNotes(['3C', '3E', '3G']);
-    // this.chordionService.activateNotes(['5C', '5E', '5G']);
-    // this.chordionService.activateNotes(['7C', '7E', '7G']);
   }
 }
