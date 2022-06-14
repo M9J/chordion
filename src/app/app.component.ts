@@ -20,11 +20,16 @@ export class AppComponent {
     if (keyboard) {
       const cMajor = new Chord([
         keyboard['3C'],
-        keyboard['3F'],
+        keyboard['3E'],
         keyboard['3G'],
       ]);
       const transposedChord = new Transpose().chord(cMajor, 2, keyboard);
       console.log('transposedChord', transposedChord);
+      const transposedKeys: string[] = transposedChord.keys!.map(
+        (tk) => `${tk.octave}${tk.note}`
+      );
+      console.log('tranposedKeys', transposedKeys)
+      this.chordionService.activateNotes(transposedKeys);
     }
   }
 }
