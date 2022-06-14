@@ -19,13 +19,16 @@
   border-top-right-radius: 0px;
   user-select: none;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .key-white:hover {
   background-color: silver;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .key-white:active,
 .is-active {
   background-color: grey;
+  -webkit-tap-highlight-color: transparent;
 }

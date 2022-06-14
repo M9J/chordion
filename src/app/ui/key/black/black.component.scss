@@ -18,13 +18,16 @@
   border-top: 0;
   user-select: none;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .key-black:hover {
   background-color: silver;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .key-black:active,
 .is-active {
   background-color: grey;
+  -webkit-tap-highlight-color: transparent;
 }
