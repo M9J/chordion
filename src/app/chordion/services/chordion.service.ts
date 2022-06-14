@@ -29,7 +29,7 @@ export class ChordionService {
             throw new Error(KEY_ERRORS.KEY_OUT_OF_RANGE);
           }
         }
-      }, 1000);
+      }, 0);
     }
   }
 
