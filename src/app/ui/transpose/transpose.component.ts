@@ -14,10 +14,14 @@ export class TransposeComponent implements OnInit {
   ngOnInit(): void {}
 
   decrement() {
-    this.chordionService.transpose(--this.transposeValue);
+    // this.chordionService.transpose(--this.transposeValue);
+    --this.transposeValue;
+    this.chordionService.transpose(-1);
   }
 
   increment() {
-    this.chordionService.transpose(++this.transposeValue);
+    // this.chordionService.transpose(++this.transposeValue);
+    ++this.transposeValue;
+    this.chordionService.transpose(+1);
   }
 }

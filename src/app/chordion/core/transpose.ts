@@ -3,7 +3,7 @@ import { Chord } from './chord';
 import { Key } from './key';
 
 export class Transpose {
-  constructor() { }
+  constructor() {}
 
   chord(chord: Chord, value: number, keyboard: any) {
     const transposedKeys: any = [];

@@ -1,4 +1,4 @@
-<div class="keyboard-container">
+<div class="keyboard-container" id="keyboard-container">
   <ng-container *ngIf="keyboard">
     <ng-container *ngFor="let key of keysArray">
       <ui-key-black *ngIf="key['color'] === 0" [key]="key"></ui-key-black>
