@@ -7,8 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "dbuild": "ng build --base-href 'https://m9j.github.io/chordion/' --output-path 'docs'",
-    "dbuild-gh": "ng build --base-href 'https://m9j.github.io/chordion/' --output-path 'ghbuilds'"
+    "dbuild": "ng build --base-href 'https://m9j.github.io/chordion/' --output-path 'docs'"
   },
   "private": true,
   "dependencies": {
