@@ -8,7 +8,13 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: "16"
-      - run: npm install
-      - run: npm run dbuild
-      - run: ls && cd docs && ls
+      - run: |
+          npm install
+          npm run dbuild
+      
+      - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        branch: docs
+        folder: build
       
