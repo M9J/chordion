@@ -1,7 +1,7 @@
 name: dbuild
 on: [push]
 jobs:
-  ng-build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -21,6 +21,6 @@ jobs:
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: docs
           folder: build
+          branch: build
       
