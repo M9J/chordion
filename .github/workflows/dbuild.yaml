@@ -1,0 +1,12 @@
+name: dbuild
+on: [push]
+jobs:
+  ng-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: action/setup-node@v3
+        with:
+          node-version: "16"
+      - run: npm install
+      - run: npm run dbuild
