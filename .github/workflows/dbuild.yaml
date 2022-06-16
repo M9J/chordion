@@ -10,3 +10,5 @@ jobs:
           node-version: "16"
       - run: npm install
       - run: npm run dbuild
+      - run: npm run dbuild-gh
+      - run: git checkout build
