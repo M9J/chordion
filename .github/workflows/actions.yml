@@ -5,7 +5,7 @@ jobs:
     name: Build
     uses: ./.github/workflows/build.yml
 
-  deploy:
-    name: Deploy
+  push:
+    name: Push
     needs: [build]
-    uses: ./.github/workflows/deploy.yml
+    uses: ./.github/workflows/push.yml
