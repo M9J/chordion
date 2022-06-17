@@ -2,10 +2,6 @@ name: Build
 
 on:
   workflow_call:
-    inputs:
-      username:
-        required: false
-        type: string
 
 jobs:
   build:
