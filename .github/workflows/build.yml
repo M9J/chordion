@@ -8,8 +8,7 @@ on:
         type: string
 
 jobs:
-  build:
-    name: Build for deployment
+  - name: Build for deployment
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
