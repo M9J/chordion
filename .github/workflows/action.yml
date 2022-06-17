@@ -6,14 +6,17 @@ jobs:
     uses: ./.github/workflows/build.yml
 
   store:
+    needs: [build]
     name: Store
     uses: ./.github/workflows/store.yml
 
   download:
+    needs: [store]
     name: Download
     uses: ./.github/workflows/download.yml
 
   deploy:
+    needs: [download]
     name: Deploy
     needs: [build]
     uses: ./.github/workflows/deploy.yml
