@@ -8,17 +8,14 @@ jobs:
     name: Download > Deploy
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
       - name: Download build
         uses: actions/download-artifact@v3
         with:
           name: build
           path: build
-
-      - name: command
-        run: ls -l
-
-      - name: Checkout code
-        uses: actions/checkout@v3
 
       - name: command
         run: ls -l
