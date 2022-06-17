@@ -1,9 +1,11 @@
 name: dbuild
 on: [push]
 jobs:
-  Build:
-    uses: ./.github/workflows/build.yml
+  build:
+    - name: Build
+      uses: ./.github/workflows/build.yml
 
   Deploy:
-    needs: [build]
-    uses: ./.github/workflows/deploy.yml
+    - name: Deploy
+      needs: [build]
+      uses: ./.github/workflows/deploy.yml
