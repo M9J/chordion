@@ -33,7 +33,7 @@ export class AppComponent {
         (tk) => `${tk.octave}${tk.note}`
       );
       console.log('tranposedKeys', transposedKeys);
-      this.chordionService.activateNotes(transposedKeys);
+      // this.chordionService.activateNotes(transposedKeys);
     }
   }
 }
