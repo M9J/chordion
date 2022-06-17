@@ -9,7 +9,7 @@ on:
 
 jobs:
   build:
-    name: Build > upload
+    name: Build > Upload
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
