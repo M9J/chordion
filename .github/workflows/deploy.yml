@@ -17,9 +17,6 @@ jobs:
           name: build
           path: build
 
-      - name: command
-        run: ls -l
-
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
