@@ -9,7 +9,7 @@ on:
 
 jobs:
   download:
-    name: Download and deploy
+    name: Download > deploy
     runs-on: ubuntu-latest
     steps:
       - name: Download build
