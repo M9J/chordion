@@ -9,9 +9,14 @@ on:
 
 jobs:
   deploy:
-    name: Deploy
+    name: Download and deploy
     runs-on: ubuntu-latest
     steps:
+      - name: Download build
+        uses: actions/download-artifact@v3
+        with:
+          name: latest-build
+
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:

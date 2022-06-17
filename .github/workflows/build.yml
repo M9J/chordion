@@ -9,7 +9,7 @@ on:
 
 jobs:
   build:
-    name: Build
+    name: Build and store
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -25,3 +25,9 @@ jobs:
 
       - name: Build for deployment
         run: npm run dbuild
+
+      - name: Upload build
+        uses: actions/upload-artifact@v3
+        with:
+          name: latest-build
+          path: build/
