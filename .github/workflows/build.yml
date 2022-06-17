@@ -28,6 +28,7 @@ jobs:
 
   store:
     name: Store
+    needs: [build]
     runs-on: ubuntu-latest
     steps:
       - name: Upload build
