@@ -9,21 +9,16 @@ on:
 
 jobs:
   download:
-    name: Download
+    name: Download and deploy
     runs-on: ubuntu-latest
     steps:
       - name: Download build
         uses: actions/download-artifact@v3
         with:
-          name: latest-build
+          name: build
 
-  deploy:
-    name: Deploy
-    needs: [download]
-    runs-on: ubuntu-latest
-    steps:
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: latest-build
+          folder: build
           branch: build
