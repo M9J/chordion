@@ -9,7 +9,7 @@ on:
 
 jobs:
   build:
-    name: Build for deployment
+    name: Deploy latest build
     runs-on: ubuntu-latest
     steps:
       - name: Deploy

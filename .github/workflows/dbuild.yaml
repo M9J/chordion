@@ -2,30 +2,7 @@ name: dbuild
 on: [push]
 jobs:
   build:
-    uses: ./.github/workflows/build.yaml@main
+    uses: ./.github/workflows/build.yml
 
   deploy:
-    uses: ./github/workflows/deploy.yaml@main
-
-  # build-and-deploy:
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - name: Checkout
-  #       uses: actions/checkout@v3
-
-  #     - name: Setup Node
-  #       uses: actions/setup-node@v3
-  #       with:
-  #         node-version: "16"
-
-  #     - name: Install
-  #       run: npm install
-
-  #     - name: Build for deployment
-  #       run: npm run dbuild
-
-  #     - name: Deploy
-  #       uses: JamesIves/github-pages-deploy-action@v4
-  #       with:
-  #         folder: build
-  #         branch: build
+    uses: ./github/workflows/deploy.yml
