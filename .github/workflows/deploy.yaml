@@ -1,0 +1,19 @@
+name: Build
+
+on:
+  workflow_call:
+    inputs:
+      username:
+        required: false
+        type: string
+
+jobs:
+  build:
+    name: Build for deployment
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: build
+          branch: build
