@@ -1,5 +1,5 @@
 name: Build
-
+on: [workflow_call]
 jobs:
   build:
     name: Build > Upload
