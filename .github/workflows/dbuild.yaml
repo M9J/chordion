@@ -5,4 +5,4 @@ jobs:
     uses: ./.github/workflows/build.yml
 
   deploy:
-    uses: ./github/workflows/deploy.yml
+    uses: ./.github/workflows/deploy.yml
