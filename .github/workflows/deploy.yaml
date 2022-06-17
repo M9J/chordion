@@ -1,4 +1,4 @@
-name: Build
+name: Deploy
 
 on:
   workflow_call:
@@ -8,7 +8,7 @@ on:
         type: string
 
 jobs:
-  build:
+  deploy:
     name: Deploy latest build
     runs-on: ubuntu-latest
     steps:
