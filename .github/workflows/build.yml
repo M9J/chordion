@@ -12,10 +12,10 @@ jobs:
     name: Build and upload
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Setup Node
+      - name: Setup node
         uses: actions/setup-node@v3
         with:
           node-version: "16"
@@ -23,7 +23,7 @@ jobs:
       - name: Install
         run: npm install
 
-      - name: Build for deployment
+      - name: Take build
         run: npm run dbuild
 
       - name: Upload build
