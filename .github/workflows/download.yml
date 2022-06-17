@@ -1,0 +1,18 @@
+name: Download build
+
+on:
+  workflow_call:
+    inputs:
+      username:
+        required: false
+        type: string
+
+jobs:
+  download:
+    name: Download build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download build
+        uses: actions/download-artifact@v3
+        with:
+          name: latest-build

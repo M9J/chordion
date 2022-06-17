@@ -1,9 +1,17 @@
-name: dbuild
+name: Action
 on: [push]
 jobs:
   build:
     name: Build
     uses: ./.github/workflows/build.yml
+
+  store:
+    name: Store
+    uses: ./.github/workflows/store.yml
+
+  download:
+    name: Download
+    uses: ./.github/workflows/download.yml
 
   deploy:
     name: Deploy
