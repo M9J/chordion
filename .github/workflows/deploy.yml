@@ -9,11 +9,11 @@ on:
 
 jobs:
   deploy:
-    - name: Deploy
-      runs-on: ubuntu-latest
-      steps:
-        - name: Deploy
-          uses: JamesIves/github-pages-deploy-action@v4
-          with:
-            folder: build
-            branch: build
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: build
+          branch: build
