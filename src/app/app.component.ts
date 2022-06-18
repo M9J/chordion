@@ -23,11 +23,11 @@ export class AppComponent {
     this.chordionDataService.currentKeyboard = keyboard;
     if (keyboard) {
       const cMajor = new Chord([
-        keyboard['3C'],
-        keyboard['3E'],
-        keyboard['3G'],
+        keyboard['1C'],
+        keyboard['1D#'],
+        keyboard['1G'],
       ]);
-      const transposedChord = new Transpose().chord(cMajor, 2, keyboard);
+      const transposedChord = new Transpose().chord(cMajor, 0, keyboard);
       console.log('transposedChord', transposedChord);
       const transposedKeys: string[] = transposedChord.keys!.map(
         (tk) => `${tk.octave}${tk.note}`

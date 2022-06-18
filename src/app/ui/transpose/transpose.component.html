@@ -1,8 +1,12 @@
 <fluent-card class="transpose-card">
   <div class="transpose-label">Transpose</div>
   <div class="transpose-controls">
-    <fluent-button (click)="decrement()">-</fluent-button>
+    <fluent-button class="transpose-button" (click)="decrement()"
+      >&lt;</fluent-button
+    >
     <div class="transpose-value">{{ transposeValue }}</div>
-    <fluent-button (click)="increment()">+</fluent-button>
+    <fluent-button class="transpose-button" (click)="increment()"
+      >&gt;</fluent-button
+    >
   </div>
 </fluent-card>

@@ -7,17 +7,18 @@ import {
   fluentTabPanel,
   fluentTabs,
   fluentTextField,
-  provideFluentDesignSystem
+  provideFluentDesignSystem,
 } from '@fluentui/web-components';
 
-export default () =>
-  provideFluentDesignSystem().register(
-    fluentBadge(),
-    fluentButton(),
-    fluentCard(),
-    fluentSwitch(),
-    fluentTab(),
-    fluentTabPanel(),
-    fluentTabs(),
-    fluentTextField()
-  );
+export default () => provideFluentDesignSystem().register(fluentComponents);
+
+const fluentComponents = [
+  fluentBadge(),
+  fluentButton(),
+  fluentCard(),
+  fluentSwitch(),
+  fluentTab(),
+  fluentTabPanel(),
+  fluentTabs(),
+  fluentTextField(),
+];

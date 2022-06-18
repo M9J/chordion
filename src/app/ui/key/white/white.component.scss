@@ -33,16 +33,17 @@
 .key-white:active,
 .is-active {
   // background-color: orange;
-  background-color: #036ac4;
+  background-color: hsl(208, 97%, 39%);
   -webkit-tap-highlight-color: transparent;
   .key-label {
-    color: white;
+    // color: white;
   }
 }
 
 .key-label {
   text-align: center;
   letter-spacing: 2px;
-  color: black;
   padding-bottom: 8px;
+  // color: black;
+  color: transparent;
 }
