@@ -1,19 +1,23 @@
 import {
+  fluentBadge,
   fluentButton,
   fluentCard,
+  fluentSwitch,
   fluentTab,
   fluentTabPanel,
   fluentTabs,
   fluentTextField,
-  provideFluentDesignSystem,
+  provideFluentDesignSystem
 } from '@fluentui/web-components';
 
 export default () =>
   provideFluentDesignSystem().register(
+    fluentBadge(),
     fluentButton(),
+    fluentCard(),
+    fluentSwitch(),
     fluentTab(),
     fluentTabPanel(),
     fluentTabs(),
-    fluentTextField(),
-    fluentCard()
+    fluentTextField()
   );

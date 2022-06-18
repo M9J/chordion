@@ -1,14 +1,22 @@
 <div class="chordion-container">
-  <div class="chordion-logo">Chordion</div>
+  <div class="chordion-logo">
+    Chordion <fluent-badge appearance="accent">Beta</fluent-badge>
+  </div>
   <div class="chordion-piano">
     <ui-keyboard></ui-keyboard>
   </div>
   <fluent-tabs activeid="controls">
     <fluent-tab id="controls">Controls</fluent-tab>
     <fluent-tab id="settings">Settings</fluent-tab>
-    <fluent-tab-panel id="controls"> 
-      <ui-transpose></ui-transpose>  
+    <fluent-tab-panel id="controls">
+      <ui-transpose></ui-transpose>
     </fluent-tab-panel>
-    <fluent-tab-panel id="settings"> settings </fluent-tab-panel>
+    <fluent-tab-panel id="settings">
+      <fluent-switch>
+        <span slot="checked-message">On</span>
+        <span slot="unchecked-message">Off</span>
+        <label for="cap-switch">Dark mode:</label>
+      </fluent-switch>
+    </fluent-tab-panel>
   </fluent-tabs>
 </div>

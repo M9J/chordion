@@ -32,8 +32,12 @@
 
 .key-white:active,
 .is-active {
-  background-color: orange;
+  // background-color: orange;
+  background-color: #036ac4;
   -webkit-tap-highlight-color: transparent;
+  .key-label {
+    color: white;
+  }
 }
 
 .key-label {

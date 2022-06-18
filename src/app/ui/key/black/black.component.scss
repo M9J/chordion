@@ -31,7 +31,8 @@
 
 .key-black:active,
 .is-active {
-  background-color: orangered;
+  // background-color: orangered;
+  background-color: #036ac4;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -39,4 +40,5 @@
   text-align: center;
   letter-spacing: 2px;
   padding-bottom: 4px;
+  color: white;
 }
