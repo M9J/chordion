@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1655533242515,
+  "timestamp": 1655534975968,
   "index": "https://m9j.github.io/chordion/index.html",
   "assetGroups": [
     {
@@ -52,7 +52,7 @@
     "https://m9j.github.io/chordion/assets/icons/icon-72x72.png": "0276bcef31bd2b5b08929d9ec3ea3c331b3d6bf5",
     "https://m9j.github.io/chordion/assets/icons/icon-96x96.png": "04644739530a6db8577eb74ad08e100884b5dfa1",
     "https://m9j.github.io/chordion/favicon.png": "0276bcef31bd2b5b08929d9ec3ea3c331b3d6bf5",
-    "https://m9j.github.io/chordion/index.html": "0b87cdb3e7b33412a272c1edf804cde753959625",
+    "https://m9j.github.io/chordion/index.html": "9462b6200faa1c34e0412f058ce238f9dadd910c",
     "https://m9j.github.io/chordion/main.da88a1bd396aa89a.js": "ff8eda2ec1503924569796dbd10ced1f36dc48a7",
     "https://m9j.github.io/chordion/manifest.webmanifest": "f43678f9c9a4184c2686ce424d5014c26034d3ac",
     "https://m9j.github.io/chordion/polyfills.254c0be08e46df47.js": "487033976c0f6b1821787d0d2fd91b18979b5ca3",
