@@ -11,6 +11,8 @@ import { FormsModule } from '@angular/forms';
 import { KeyboardComponent } from './ui/keyboard/keyboard.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { ChordNotesComponent } from './ui/chord-notes/chord-notes.component';
+import { SettingsComponent } from './ui/settings/settings.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import { environment } from '../environments/environment';
     BlackComponent,
     OctaveComponent,
     KeyboardComponent,
+    ChordNotesComponent,
+    SettingsComponent,
   ],
   imports: [
     BrowserModule,

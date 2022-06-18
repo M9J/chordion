@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ChordionDataService } from 'src/app/chordion/services/chordion-data.service';
 
 @Component({
   selector: 'ui-key-white',
@@ -10,7 +11,7 @@ export class WhiteComponent implements OnInit {
     isActive: false,
   };
 
-  constructor() {}
+  constructor(public chordionDataService: ChordionDataService) {}
 
   ngOnInit(): void {}
 }

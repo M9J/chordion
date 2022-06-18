@@ -6,6 +6,9 @@ import { Injectable } from '@angular/core';
 export class ChordionDataService {
   private _currentKeyboard: any = null;
   private _currentTranspose: number = 0;
+  public settings = {
+    keyLabel: false
+  };
 
   set currentKeyboard(keyboard) {
     this._currentKeyboard = keyboard;

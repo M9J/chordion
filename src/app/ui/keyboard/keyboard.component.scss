@@ -14,15 +14,5 @@
   padding-right: 24px;
   box-sizing: border-box;
   background-color: black;
-
-  &::-webkit-scrollbar {
-    background-color: #222;
-  }
-  &::-webkit-scrollbar-thumb {
-    background-color: #333;
-
-    &:hover {
-      background-color: #444;
-    }
-  }
+  height: 150px;
 }

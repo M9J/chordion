@@ -1,0 +1,14 @@
+<fluent-switch>
+  <span slot="checked-message">On</span>
+  <span slot="unchecked-message">Off</span>
+  <label for="cap-switch">Dark mode:</label>
+</fluent-switch>
+<br /><br />
+<fluent-switch
+  [checked]="keyLabel"
+  (click)="toggleKeyLabel()"
+>
+  <span slot="checked-message">On</span>
+  <span slot="unchecked-message">Off</span>
+  <label for="cap-switch">Key label:</label>
+</fluent-switch>

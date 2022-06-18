@@ -32,11 +32,10 @@
 
 .key-white:active,
 .is-active {
-  // background-color: orange;
   background-color: hsl(208, 97%, 39%);
   -webkit-tap-highlight-color: transparent;
   .key-label {
-    // color: white;
+    color: white;
   }
 }
 
@@ -44,6 +43,5 @@
   text-align: center;
   letter-spacing: 2px;
   padding-bottom: 8px;
-  // color: black;
-  color: transparent;
+  color: black;
 }
