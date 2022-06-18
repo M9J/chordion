@@ -1,13 +1,8 @@
-<div class="transpose-container">
-  <fieldset>
-    <legend>Transpose</legend>
-    <button (click)="decrement()">-</button>
-    <input
-      type="text"
-      name="transpose-value"
-      id="transpose-value"
-      [(ngModel)]="transposeValue"
-    />
-    <button (click)="increment()">+</button>
-  </fieldset>
-</div>
+<fluent-card class="transpose-card">
+  <div class="transpose-label">Transpose</div>
+  <div class="transpose-controls">
+    <fluent-button (click)="decrement()">-</fluent-button>
+    <div class="transpose-value">{{ transposeValue }}</div>
+    <fluent-button (click)="increment()">+</fluent-button>
+  </div>
+</fluent-card>

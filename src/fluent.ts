@@ -1,8 +1,10 @@
 import {
   fluentButton,
+  fluentCard,
   fluentTab,
   fluentTabPanel,
   fluentTabs,
+  fluentTextField,
   provideFluentDesignSystem,
 } from '@fluentui/web-components';
 
@@ -11,5 +13,7 @@ export default () =>
     fluentButton(),
     fluentTab(),
     fluentTabPanel(),
-    fluentTabs()
+    fluentTabs(),
+    fluentTextField(),
+    fluentCard()
   );

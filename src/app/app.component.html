@@ -3,12 +3,12 @@
   <div class="chordion-piano">
     <ui-keyboard></ui-keyboard>
   </div>
-  <!-- <div class="chordion-header">Controls</div>
-  <div class="chordion-controls">
-    <ui-transpose></ui-transpose>
-  </div> -->
-  <fluent-tabs>
+  <fluent-tabs activeid="controls">
     <fluent-tab id="controls">Controls</fluent-tab>
-    <fluent-tab-panel id="controls"></fluent-tab-panel>
+    <fluent-tab id="settings">Settings</fluent-tab>
+    <fluent-tab-panel id="controls"> 
+      <ui-transpose></ui-transpose>  
+    </fluent-tab-panel>
+    <fluent-tab-panel id="settings"> settings </fluent-tab-panel>
   </fluent-tabs>
 </div>
