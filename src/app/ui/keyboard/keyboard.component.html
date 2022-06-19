@@ -1,8 +1,16 @@
-<div class="keyboard-container" id="keyboard-container">
+<!-- <div class="keyboard-container" id="keyboard-container">
   <ng-container *ngIf="keyboard">
     <ng-container *ngFor="let key of keysArray">
       <ui-key-black *ngIf="key['color'] === 0" [key]="key"></ui-key-black>
       <ui-key-white *ngIf="key['color'] === 1" [key]="key"></ui-key-white>
+    </ng-container>
+  </ng-container>
+</div> -->
+
+<div class="keyboard-container" id="keyboard-container">
+  <ng-container *ngIf="keyboard">
+    <ng-container *ngFor="let octave of octavesArray">
+      <ui-octave [octave]="octaves[octave]" [octaveIndex]="octave"></ui-octave>
     </ng-container>
   </ng-container>
 </div>

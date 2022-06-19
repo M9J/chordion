@@ -10,14 +10,27 @@ import { ChordionService } from 'src/app/chordion/services/chordion.service';
 export class KeyboardComponent implements OnInit, OnDestroy {
   keyboard: any = null;
   keysArray: any = [];
-  keysArrayTemp: any = [];
+  octavesArray: number[] = [];
+  octaves: any = {};
 
   constructor(public chordionDataService: ChordionDataService) {}
 
   ngOnInit(): void {
     this.keyboard = this.chordionDataService.currentKeyboard;
     if (this.keyboard) this.keysArray = Object.values(this.keyboard);
-    this.addEventListeners();
+    if (this.keyboard) {
+      for (const key in this.keyboard) {
+        if (!this.octavesArray.includes(parseInt(key))) {
+          this.octavesArray.push(parseInt(key));
+          this.octaves[parseInt(key)] = {};
+        }
+        this.octaves[parseInt(key)][this.keyboard[key].note] =
+          this.keyboard[key];
+      }
+    }
+    console.log(this.octavesArray);
+    console.log(this.octaves);
+    // this.addEventListeners();
   }
 
   ngOnDestroy(): void {
@@ -36,8 +49,6 @@ export class KeyboardComponent implements OnInit, OnDestroy {
   onMouseWheelScroll(e: any) {
     const keyboardContainer = document.getElementById('keyboard-container');
     if (keyboardContainer) {
-      // if (e.deltaY > 0) keyboardContainer.scrollLeft += 100;
-      // else keyboardContainer.scrollLeft -= 100;
       if (e.deltaY > 0 || e.deltaX > 0)
         keyboardContainer.scrollLeft += e.deltaY;
       else keyboardContainer.scrollLeft += e.deltaY;

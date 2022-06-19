@@ -1,14 +1,30 @@
+<!-- <div class="octave-container">
+  <ui-key-white></ui-key-white>
+  <ui-key-black></ui-key-black>
+  <ui-key-white></ui-key-white>
+  <ui-key-black></ui-key-black>
+  <ui-key-white></ui-key-white>
+  <ui-key-white></ui-key-white>
+  <ui-key-black></ui-key-black>
+  <ui-key-white></ui-key-white>
+  <ui-key-black></ui-key-black>
+  <ui-key-white></ui-key-white>
+  <ui-key-black></ui-key-black>
+  <ui-key-white></ui-key-white>
+</div> -->
+
 <div class="octave-container">
-  <ui-key-white></ui-key-white>
-  <ui-key-black></ui-key-black>
-  <ui-key-white></ui-key-white>
-  <ui-key-black></ui-key-black>
-  <ui-key-white></ui-key-white>
-  <ui-key-white></ui-key-white>
-  <ui-key-black></ui-key-black>
-  <ui-key-white></ui-key-white>
-  <ui-key-black></ui-key-black>
-  <ui-key-white></ui-key-white>
-  <ui-key-black></ui-key-black>
-  <ui-key-white></ui-key-white>
+  <div class="octave-keys">
+    <ng-container *ngFor="let key of octavesArray">
+      <ui-key-black
+        *ngIf="keyboard[key]['color'] === 0"
+        [key]="keyboard[key]"
+      ></ui-key-black>
+      <ui-key-white
+        *ngIf="keyboard[key]['color'] === 1"
+        [key]="keyboard[key]"
+      ></ui-key-white>
+    </ng-container>
+  </div>
+  <div class="octave-label">{{ octaveIndex }}</div>
 </div>
