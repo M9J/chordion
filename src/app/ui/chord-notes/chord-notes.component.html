@@ -1,8 +1,9 @@
 <fluent-card class="chord-notes-card">
-  <fluent-text-area
-    [value]="chordNotes"
-    (blur)="parseChordNotes($event)"
-    width="400"
-    height="600"
-  ></fluent-text-area>
+  <div class="chord-notes-label">Chord notes</div>
+  <div class="chord-notes-controls">
+    <fluent-text-area
+      [value]="chordNotes"
+      (blur)="parseChordNotes($event)"
+    ></fluent-text-area>
+  </div>
 </fluent-card>

@@ -5,3 +5,15 @@
   margin-right: 16px;
   margin-bottom: 16px;
 }
+
+.chord-notes-label {
+  padding-bottom: 8px;
+  text-align: center;
+}
+
+.chord-notes-controls {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
