@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ChordionDataService } from 'src/app/chordion/services/chordion-data.service';
+import { ChordionService } from 'src/app/chordion/services/chordion.service';
 
 @Component({
   selector: 'ui-chord-notes',
@@ -8,17 +10,21 @@ import { Component, OnInit } from '@angular/core';
 export class ChordNotesComponent implements OnInit {
   chordNotes: string = '';
 
-  constructor() {}
+  constructor(private chordionService: ChordionService) {}
 
-  ngOnInit(): void {
-    this.chordNotes = '2C#, 4B, 5G#';
-  }
+  ngOnInit(): void {}
 
-  parseChordNotes() {
-    const splitChordNotes = this.chordNotes.split(',').map(v => v.trim());
-    console.log('splitChordNotes', splitChordNotes);
-    if (splitChordNotes) {
-      
-    }
+  parseChordNotes(event: any) {
+    this.chordNotes = event ? event?.target?.value : this.chordNotes;
+    console.log('chordNotes', this.chordNotes);
+    const splitChordNotes = this.chordNotes
+      .split(',')
+      .map((v) => v.trim())
+      .map((v) => v.toUpperCase());
+    this.chordionService.resetActiveNotes();
+    const transposedChordNotes =
+      this.chordionService.transposeNotes(splitChordNotes);
+    console.log('transposedChordNotes', transposedChordNotes);
+    this.chordionService.activateNotes(transposedChordNotes);
   }
 }

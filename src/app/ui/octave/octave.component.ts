@@ -18,7 +18,7 @@ export class OctaveComponent implements OnInit {
     this.keyboard = this.chordionDataService.currentKeyboard;
     this.octavesArray = Object.keys(this.octave);
     this.octavesArray = this.octavesArray.map((k) => `${this.octaveIndex}${k}`);
-    console.log('this.octave', this.octave);
-    console.log('this.octavesArray', this.octavesArray);
+    // console.log('this.octave', this.octave);
+    // console.log('this.octavesArray', this.octavesArray);
   }
 }

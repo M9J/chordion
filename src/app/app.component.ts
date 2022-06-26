@@ -15,25 +15,31 @@ export class AppComponent {
     private chordionDataService: ChordionDataService,
     private chordionService: ChordionService
   ) {
-    this.poc2();
+    // this.poc2();
+    this.poc3();
   }
 
-  poc2() {
+  poc3() {
     const keyboard = new Keyboard(88).keyboard;
     this.chordionDataService.currentKeyboard = keyboard;
-    if (keyboard) {
-      const cMajor = new Chord([
-        keyboard['1C'],
-        keyboard['1D#'],
-        keyboard['1G'],
-      ]);
-      const transposedChord = new Transpose().chord(cMajor, 0, keyboard);
-      console.log('transposedChord', transposedChord);
-      const transposedKeys: string[] = transposedChord.keys!.map(
-        (tk) => `${tk.octave}${tk.note}`
-      );
-      console.log('tranposedKeys', transposedKeys);
-      this.chordionService.activateNotes(transposedKeys);
-    }
   }
+
+  // poc2() {
+  //   const keyboard = new Keyboard(88).keyboard;
+  //   this.chordionDataService.currentKeyboard = keyboard;
+  //   if (keyboard) {
+  //     const cMajor = new Chord([
+  //       keyboard['1C'],
+  //       keyboard['1D#'],
+  //       keyboard['1G'],
+  //     ]);
+  //     const transposedChord = new Transpose().chord(cMajor, 0, keyboard);
+  //     console.log('transposedChord', transposedChord);
+  //     const transposedKeys: string[] = transposedChord.keys!.map(
+  //       (tk) => `${tk.octave}${tk.note}`
+  //     );
+  //     console.log('tranposedKeys', transposedKeys);
+  //     this.chordionService.activateNotes(transposedKeys);
+  //   }
+  // }
 }

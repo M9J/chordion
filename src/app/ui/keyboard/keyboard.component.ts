@@ -28,8 +28,8 @@ export class KeyboardComponent implements OnInit, OnDestroy {
           this.keyboard[key];
       }
     }
-    console.log(this.octavesArray);
-    console.log(this.octaves);
+    // console.log(this.octavesArray);
+    // console.log(this.octaves);
     // this.addEventListeners();
   }
 

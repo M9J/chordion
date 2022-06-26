@@ -1,1 +1,8 @@
-<fluent-text-area [value]="chordNotes" placeholder="2C#, 4B, 5G#" (blur)="parseChordNotes()"></fluent-text-area>
+<fluent-card class="chord-notes-card">
+  <fluent-text-area
+    [value]="chordNotes"
+    (blur)="parseChordNotes($event)"
+    width="400"
+    height="600"
+  ></fluent-text-area>
+</fluent-card>
